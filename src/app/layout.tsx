@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/providers/ThemeProvider";
 import Header from "@/components/layouts/Header";
 
 import "./globals.css";
+import Loader from "@/components/layouts/Loader";
 
 export const source = Source_Sans_3({
   subsets: ["latin"],
@@ -71,6 +72,7 @@ export default function RootLayout({
       <body
         className={`${source.className} ${firaCode.variable} ${sriracha.variable}`}
       >
+        <Loader />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
