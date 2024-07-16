@@ -29,7 +29,7 @@ function Header() {
   return (
     <header
       ref={headerRef}
-      className="fixed z-[100] top-0 left-0 right-0 bg-transparent backdrop-blur-[6px]"
+      className="fixed z-20 top-0 left-0 right-0 bg-transparent backdrop-blur-[6px]"
     >
       <div className="w-full h-auto bg-gray-50 shadow-sm dark:bg-transparent min-h-[4.5rem] flex items-center px-[5%]">
         <div className="w-full flex items-center justify-between max-w-7xl mx-auto">
@@ -45,8 +45,8 @@ function Header() {
               </span>
             </Link>
           </div>
-          <div className=" hidden md:block m-auto">
-            <div className="flex gap-[2.5rem] items-center text-sm font-fira">
+          <div className=" hidden lg:block m-auto">
+            <div className="flex gap-6 items-center font-fira">
               {navlinks.map((link) => (
                 <Link
                   data-active={link.href === section}
@@ -62,8 +62,10 @@ function Header() {
               ))}
             </div>
           </div>
-          <div className=" flex items-center justify-end gap-2 md:gap-10">
-            <ResumeBtn />
+          <div className=" flex items-center justify-end gap-2 lg:gap-10">
+            <div className="hidden lg:block">
+              <ResumeBtn />
+            </div>
             <ThemeSwitch />
             <MobileNav />
           </div>

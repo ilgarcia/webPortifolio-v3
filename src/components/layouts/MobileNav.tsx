@@ -1,21 +1,23 @@
-import { useState } from "react"
-import navlinks from "@/lib/navConfig"
-import { HamburgerMenuIcon } from "@radix-ui/react-icons"
-import { useRouter } from "next/navigation"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Button } from "../ui/button"
+import { useState } from "react";
+import navlinks from "@/lib/navConfig";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { useRouter } from "next/navigation";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "../ui/button";
+import { cn } from "@/lib/utils";
+import ResumeBtn from "./ResumeBtn";
 
 export default function MobileNav() {
-  const [opened, setOpened] = useState<boolean>(false)
+  const [opened, setOpened] = useState<boolean>(false);
 
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <Sheet open={opened} onOpenChange={(open) => setOpened(open)}>
-      <SheetTrigger asChild className="block md:hidden">
+      <SheetTrigger asChild className="block lg:hidden">
         <Button
           className="dark:text-white px-2 flex justify-center items-center"
-          variant="default"
+          variant="ghost"
           aria-label="Toggle Navbar"
         >
           <HamburgerMenuIcon />
@@ -23,24 +25,24 @@ export default function MobileNav() {
         </Button>
       </SheetTrigger>
       <SheetContent className="w-full h-full border-0">
-        <div className="py-20 w-full flex flex-col absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 gap-10 items-center">
+        <div className="py-20 w-full flex flex-col absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 gap-6 items-center">
           {navlinks.map((navLink) => (
             <div
-              // href={navLink.href}
-              className="dark:text-white hover:dark:text-accentColor"
+              className="navlink"
               key={navLink.title}
               onClick={(e) => {
-                e.preventDefault()
-                router.push(navLink.href)
+                e.preventDefault();
+                router.push(navLink.href);
 
-                setOpened(false)
+                setOpened(false);
               }}
             >
               {navLink.title}
             </div>
           ))}
+          <ResumeBtn />
         </div>
       </SheetContent>
     </Sheet>
-  )
+  );
 }

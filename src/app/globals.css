@@ -6,9 +6,6 @@
   :root {
     /* Navbar */
     --navbar-text-color: #000000;
-    --navbar-text-size: 0.9rem;
-    --navbar-text-letter-spacing: -0.14px;
-    --navbar-text-line-height: 1.4;
     /* Navbar */
 
     --background: 0 0% 100%;
@@ -51,9 +48,6 @@
   .dark {
     /* Navbar */
     --navbar-text-color: #cecece;
-    --navbar-text-size: 0.9rem;
-    --navbar-text-letter-spacing: -0.14px;
-    --navbar-text-line-height: 1.4;
     /* Navbar */
 
     /* Resume Button */
@@ -124,10 +118,7 @@
 @layer components {
   .navlink {
     color: var(--navbar-text-color);
-    font-size: var(--navbar-text-size);
-    letter-spacing: var(--navbar-text-letter-spacing);
-    line-height: var(--navbar-text-line-height);
-    @apply [counter-increment:list-number] relative cursor-pointer no-underline font-medium transition-transform duration-300 ease-out;
+    @apply [counter-increment:list-number] relative cursor-pointer no-underline font-medium lg:text-sm leading-snug tracking-tight transition-transform duration-300 ease-out;
   }
 
   .navlink[data-active="true"]::after {
