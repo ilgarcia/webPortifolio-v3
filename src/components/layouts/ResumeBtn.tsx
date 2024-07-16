@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { cn } from "@/lib/utils";
-import { useSectionStore } from "@/store/section";
 import { gsap } from "gsap";
+
+import { cn } from "@/lib/utils";
+
+import { useSectionStore } from "@/store/section";
 
 export default function ResumeBtn() {
   const topTween = useRef(null);

@@ -1,11 +1,12 @@
 import { useState } from "react";
-import navlinks from "@/lib/navConfig";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { useRouter } from "next/navigation";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+
+import navlinks from "@/lib/navConfig";
+
+import ResumeBtn from "../ResumeBtn";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Button } from "../ui/button";
-import { cn } from "@/lib/utils";
-import ResumeBtn from "./ResumeBtn";
+import { Button } from "@/components/ui/button";
 
 export default function MobileNav() {
   const [opened, setOpened] = useState<boolean>(false);

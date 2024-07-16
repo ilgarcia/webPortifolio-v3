@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Source_Sans_3, Fira_Code, Sriracha } from "next/font/google";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 
-import Header from "@/components/layouts/Header";
+import Header from "@/components/layouts/header/Header";
 
 import "./globals.css";
 import Loader from "@/components/layouts/Loader";

@@ -9,9 +9,9 @@ import { useSectionStore } from "@/store/section";
 import { cn } from "@/lib/utils";
 import navlinks from "@/lib/navConfig";
 
-import Logo from "./Logo";
-import ResumeBtn from "./ResumeBtn";
-import ThemeSwitch from "./ThemeSwitch";
+import Logo from "../Logo";
+import ResumeBtn from "../ResumeBtn";
+import ThemeSwitch from "../ThemeSwitch";
 import MobileNav from "./MobileNav";
 
 function Header() {

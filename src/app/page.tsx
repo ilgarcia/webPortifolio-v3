@@ -1,11 +1,13 @@
-import MouseSection from "@/components/sections/MouseSection";
-import Image from "next/image";
+import Hero from "@/components/sections/hero/Hero";
+import Mouse from "@/components/sections/mouse/Mouse";
+import Social from "@/components/sections/social/Social";
 
 export default function Home() {
   return (
     <main>
-      <MouseSection />
-      
+      <Mouse />
+      <Social />
+      <Hero />
     </main>
   );
 }

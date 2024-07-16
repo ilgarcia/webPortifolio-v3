@@ -1,10 +1,13 @@
 "use client"
 
 import * as React from "react"
-import { cn } from "@/lib/utils"
-import { useSectionStore } from "@/store/section"
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import { useTheme } from "next-themes"
+import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
+
+import { cn } from "@/lib/utils"
+
+import { useSectionStore } from "@/store/section"
+
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,

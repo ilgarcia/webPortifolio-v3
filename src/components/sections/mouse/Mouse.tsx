@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 import gsap from "gsap"
 
-export default function MouseSection() {
+export default function Mouse() {
   const cursorRef = useRef(null)
 
   useEffect(() => {
