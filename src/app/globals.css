@@ -101,6 +101,10 @@
     @apply bg-background text-foreground;
   }
 
+  ol li {
+    @apply relative mb-1 pl-5 before:content-['▹'] before:absolute before:left-0 before:text-orange-300;
+  }
+
   /* Scrollbar */
   ::-webkit-scrollbar {
     @apply w-3 h-3;
@@ -143,5 +147,17 @@
 
   .webkit-reflect {
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  }
+
+  .markup {
+    @apply block relative after:absolute after:bottom-[13.5%] after:-z-10 after:h-2 after:w-[104%] after:-left-0.5 after:-rotate-1;
+  }
+
+  .mk-purple {
+    @apply after:bg-indigo-500;
+  }
+
+  .mk-orange {
+    @apply after:bg-orange-400;
   }
 }

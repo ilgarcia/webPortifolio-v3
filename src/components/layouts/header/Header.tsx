@@ -11,7 +11,7 @@ import navlinks from "@/lib/navConfig";
 
 import Logo from "../Logo";
 import ResumeBtn from "../ResumeBtn";
-import ThemeSwitch from "../ThemeSwitch";
+import ThemeSwitch from "./ThemeSwitch";
 import MobileNav from "./MobileNav";
 
 function Header() {
@@ -24,7 +24,10 @@ function Header() {
       { top: 0, duration: 0.7, delay: 2.2, ease: "Power0.easeNone" }
     );
   }, []);
+
   const { section } = useSectionStore();
+
+  console.log(section);
 
   return (
     <header
@@ -37,8 +40,7 @@ function Header() {
             <Link href="/" className="text-xl">
               <span
                 className={cn(
-                  "dark:text-white hover:text-accentColor cursor-pointer",
-                  section === "#projects" && "dark:text-black"
+                  "dark:text-white hover:text-accentColor cursor-pointer"
                 )}
               >
                 <Logo />
@@ -52,10 +54,7 @@ function Header() {
                   data-active={link.href === section}
                   key={link.title}
                   href={link.href}
-                  className={cn(
-                    "navlink",
-                    section === "#projects" && "dark:text-black"
-                  )}
+                  className={cn("navlink")}
                 >
                   {link.title}
                 </Link>
@@ -69,6 +68,12 @@ function Header() {
             <ThemeSwitch />
             <MobileNav />
           </div>
+        </div>
+      </div>
+      <div className="absolute bottom-0 right-4 mt-[2px] flex h-8 items-end overflow-hidden">
+        <div className="flex -mb-px h-[2px] w-screen -scale-x-100">
+          <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]" />
+          <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]" />
         </div>
       </div>
     </header>

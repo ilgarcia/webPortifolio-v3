@@ -4,12 +4,8 @@ const navlinks = [
       href:"#about"
   },
   {
-      title:"Projects",
-      href:"#projects"
-  },
-  {
-      title:"Skills",
-      href:"#skills"
+      title:"Portfolio",
+      href:"#portfolio"
   },
   {
       title:"Experience",

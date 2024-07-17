@@ -97,8 +97,7 @@ export default function ResumeBtn() {
       />
       <div
         className={cn(
-          "text-xs group-hover:text-white text-accentColor font-fira dark:text-gray-300",
-          section === "#projects" && "dark:text-black"
+          "text-xs group-hover:text-white text-accentColor font-fira dark:text-gray-300"
         )}
       >
         Resume

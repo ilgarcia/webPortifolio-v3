@@ -6,6 +6,7 @@ import Header from "@/components/layouts/header/Header";
 
 import "./globals.css";
 import Loader from "@/components/layouts/Loader";
+import Footer from "@/components/layouts/footer/Footer";
 
 export const source = Source_Sans_3({
   subsets: ["latin"],
@@ -14,6 +15,7 @@ export const source = Source_Sans_3({
 });
 
 export const firaCode = Fira_Code({
+  weight: ["300", "400", "500"],
   subsets: ["latin"],
   display: "swap",
   variable: "--fira-font",
@@ -79,8 +81,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          {children}
+          <div className="relative">
+            <Header />
+            {children}
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
