@@ -160,4 +160,11 @@
   .mk-orange {
     @apply after:bg-orange-400;
   }
+
+  .contact-line::before {
+    @apply content-[""] h-1 w-[60vw] bg-indigo-500/30 absolute -translate-x-full -left-10 bottom-1/2 translate-y-1/2;
+  }
+  .contact-line::after {
+    @apply content-[""] h-1 w-[60vw] bg-indigo-500/30 absolute translate-x-full -right-10 bottom-1/2 translate-y-1/2;
+  }
 }
