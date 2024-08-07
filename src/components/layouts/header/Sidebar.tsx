@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
@@ -8,7 +10,7 @@ import ResumeBtn from "../ResumeBtn";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 
-export default function MobileNav() {
+export default function Sidebar() {
   const [opened, setOpened] = useState<boolean>(false);
 
   const router = useRouter();
@@ -26,7 +28,7 @@ export default function MobileNav() {
         </Button>
       </SheetTrigger>
       <SheetContent className="w-full h-full border-0">
-        <div className="py-20 w-full flex flex-col absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 gap-6 items-center">
+        <nav className="py-20 w-full flex flex-col absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 gap-6 items-center">
           {navlinks.map((navLink) => (
             <div
               className="navlink"
@@ -42,7 +44,7 @@ export default function MobileNav() {
             </div>
           ))}
           <ResumeBtn />
-        </div>
+        </nav>
       </SheetContent>
     </Sheet>
   );

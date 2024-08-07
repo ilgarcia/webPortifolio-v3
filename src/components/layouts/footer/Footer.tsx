@@ -1,7 +1,5 @@
 // import { RiCopyrightLine } from "react-icons/ri";
 
-// import { MotionInView } from "../Ui/MotionInView";
-
 function Footer() {
   return (
     <footer className="absolute bottom-0 bg-slate-950 text-orange-400 w-full border-t-2 border-indigo-500/30 px-4 z-50">

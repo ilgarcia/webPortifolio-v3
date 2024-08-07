@@ -7,7 +7,7 @@ import Particles from "./Particles";
 
 export default function HeroCanvas() {
   return (
-    <div className="absolute top-0 left-0  w-full h-full -z-20 animate-surge">
+    <div className="absolute top-0 left-0 w-full h-full z-10 animate-surge">
       <Canvas dpr={[1, 2]} camera={{ fov: 100, position: [0, 0, 30] }}>
         <Suspense fallback={null}>
           <fog attach="fog" args={["#1e1b4b", 0, 60]} />

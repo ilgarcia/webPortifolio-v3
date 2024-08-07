@@ -63,7 +63,6 @@ function Portfolio() {
       <h2 className="absolute -rotate-90 bottom-1/2 translate-y-1/2 -translate-x-1/2 left-8 md:left-14  font-fira text-7xl md:text-8xl tracking-tighter text-slate-800/90 font-medium">
         Portfolio.
       </h2>
-      <div className="mx-auto max-w-7xl w-full h-full">Portfolio</div>
       <div className="w-full max-w-[1100px] h-full m-auto flex flex-col items-center gap-14">
         <div className="w-[80%] md:w-full flex absolute left-1/2 -translate-x-1/2 flex-col gap-8 items-center">
           {/* <RoughNotation

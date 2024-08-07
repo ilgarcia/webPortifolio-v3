@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-function AccordionList() {
+function ExperienceAccordion() {
   return (
     <Accordion
       type="single"
@@ -104,4 +104,4 @@ function AccordionList() {
   );
 }
 
-export default AccordionList;
+export default ExperienceAccordion;
