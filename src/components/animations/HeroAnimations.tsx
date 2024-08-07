@@ -4,12 +4,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
-type Props = {
-  readonly children: React.ReactNode;
-  className?: string;
-};
-
-function HeroAnimations(props: Props) {
+export function HeroContentAnimations(props: AnimationSectionProps) {
   const ref = useRef(null);
 
   useGSAP(
@@ -43,11 +38,8 @@ function HeroAnimations(props: Props) {
   );
 
   return (
-    <div 
-    ref={ref} className={props.className}>
+    <div ref={ref} className={props.className}>
       {props.children}
     </div>
   );
 }
-
-export default HeroAnimations;

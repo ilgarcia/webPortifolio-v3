@@ -6,17 +6,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-type Props = {
-  readonly children: React.ReactNode;
-  className?: string;
-  id?: string;
-};
-
-interface HorizontalProps extends Props {
-  direction: "left" | "right";
-}
-
-export function HorizontalAnimations(props: HorizontalProps) {
+function VerticalSurgeAnimations(props: AnimationSectionProps) {
   const ref = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
@@ -31,14 +21,14 @@ export function HorizontalAnimations(props: HorizontalProps) {
       });
 
       tl.fromTo(
-        ".tag-animation",
+        ".vertical-animation",
         {
-          x: props.direction == "left" ? -200 : 200,
+          y: 200,
           opacity: 0,
           stagger: 0.1,
         },
         {
-          x: 0,
+          y: 0,
           opacity: 100,
           stagger: 0.1,
         }
@@ -53,3 +43,5 @@ export function HorizontalAnimations(props: HorizontalProps) {
     </div>
   );
 }
+
+export default VerticalSurgeAnimations;

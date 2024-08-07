@@ -1,9 +1,9 @@
-"use client";
+// "use client";
 
-import { useEffect, useRef } from "react";
+// import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import { SectionNavAnimations } from "@/components/animations/SectionNavAnimations";
 
@@ -16,7 +16,7 @@ function Portfolio() {
 
   // const sectionRef = useRef(null);
 
-  const elementRef = useRef<HTMLDivElement>(null);
+  // const elementRef = useRef<HTMLDivElement>(null);
   // // const isOnScreen = useOnScreen(elementRef)
 
   // useEffect(() => {
@@ -49,20 +49,15 @@ function Portfolio() {
       <h2 className="absolute -rotate-90 bottom-1/2 translate-y-1/2 -translate-x-1/2 left-8 md:left-14  font-fira text-7xl md:text-8xl tracking-tighter text-slate-800/90 font-medium">
         Portfolio.
       </h2>
-      <div className="w-full max-w-[1100px] h-full m-auto flex flex-col items-center gap-14">
+
+
+      
+      {/* <div className="w-full max-w-[1100px] h-full m-auto flex flex-col items-center gap-14">
         <div className="w-[80%] md:w-full flex absolute left-1/2 -translate-x-1/2 flex-col gap-8 items-center">
-          {/* <RoughNotation
-            type="underline"
-            strokeWidth={2}
-            color="hsl(157, 87%, 41%)"
-            order={1}
-            show={isOnScreen}
-          > */}
-          <div className="text-xl md:text-4xl tracking-tight font-medium w-fit dark:text-accentColor">
+          <h3 className="text-4xl lg:text-6xl font-bold lg:leading-10">
             Featured Projects
-          </div>
-          {/* </RoughNotation> */}
-          <div ref={elementRef} className="overflow-hidden ">
+          </h3>
+          <div className="overflow-hidden ">
             <div className="qoutes-animation  md:w-full text-center font-medium flex flex-col items-center">
               <div>Good design is obvious. Great design is transparent.</div>
               <div>Design is not for philosophy, it&apos;s for life.</div>
@@ -87,7 +82,7 @@ function Portfolio() {
             my github profile
           </Link>
         </div>
-      </div>
+      </div> */}
     </SectionNavAnimations>
   );
 }
@@ -102,6 +97,52 @@ const projects: Project[] = [
     githubURL: "",
     githubApi: "",
   },
+  {
+    id: 2,
+    title: "Portfolio Test",
+    description: "This is a test test test test and i know it",
+    techStacks: ["ReactJS", "TypeScript"],
+    image: ogImage,
+    githubURL: "",
+    githubApi: "",
+  },
+  {
+    id: 3,
+    title: "Portfolio Test",
+    description: "This is a test test test test and i know it",
+    techStacks: ["ReactJS", "TypeScript"],
+    image: ogImage,
+    githubURL: "",
+    githubApi: "",
+  },
+  {
+    id: 4,
+    title: "Portfolio Test",
+    description: "This is a test test test test and i know it",
+    techStacks: ["ReactJS", "TypeScript"],
+    image: ogImage,
+    githubURL: "",
+    githubApi: "",
+  },
+  {
+    id: 5,
+    title: "Portfolio Test",
+    description: "This is a test test test test and i know it",
+    techStacks: ["ReactJS", "TypeScript"],
+    image: ogImage,
+    githubURL: "",
+    githubApi: "",
+  },
+  {
+    id: 6,
+    title: "Portfolio Test",
+    description: "This is a test test test test and i know it",
+    techStacks: ["ReactJS", "TypeScript"],
+    image: ogImage,
+    githubURL: "",
+    githubApi: "",
+  },
+
 ];
 
 export default Portfolio;

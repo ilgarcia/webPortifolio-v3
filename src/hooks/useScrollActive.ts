@@ -8,7 +8,7 @@ export default function useScrollActive(ref: RefObject<HTMLElement>) {
       const mouseScrollY = window.scrollY;
 
       const sectionHeight = ref.current?.offsetHeight;
-      const sectionTop = ref.current?.offsetTop! - 80;
+      const sectionTop = ref.current?.offsetTop! - 100;
 
       if (
         mouseScrollY > sectionTop &&

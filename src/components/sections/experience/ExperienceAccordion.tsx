@@ -13,7 +13,7 @@ function ExperienceAccordion() {
       collapsible
       className="w-full"
     >
-      <AccordionItem value="item-1">
+      <AccordionItem value="item-1" className="horizontal-animation">
         <AccordionTrigger>
           <div className="w-full flex justify-between">
             <div>Managing Partner @ Conta-Mais</div>
@@ -43,7 +43,7 @@ function ExperienceAccordion() {
           </ol>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-2">
+      <AccordionItem value="item-2" className="horizontal-animation">
         <AccordionTrigger>
           <div className="w-full flex justify-between">
             <div>Process analyst @ Itaú Unibanco</div>
@@ -75,7 +75,7 @@ function ExperienceAccordion() {
           </ol>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-3">
+      <AccordionItem value="item-3" className="horizontal-animation">
         <AccordionTrigger>
           <div className="w-full flex justify-between">
             <div>Intern @ Itaú Unibanco</div>

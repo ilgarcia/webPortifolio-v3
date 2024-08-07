@@ -1,13 +1,13 @@
 import React from "react";
-import { HorizontalAnimations } from "./AboutAnimations";
+import { HorizontalEntryAnimations } from "@/components/animations/HorizontalEntryAnimations"
 
 function SkillsCard() {
   return (
-    <HorizontalAnimations
+    <HorizontalEntryAnimations
       direction="right"
       className="relative flex flex-wrap justify-center items-center gap-0 flex-col -space-y-6 mt-8"
     >
-      <div className="tag-animation p-8 max-w-xs relative bg-card text-card-foreground border border-border rounded shadow-md shadow-border ">
+      <div className="horizontal-animation p-8 max-w-xs relative bg-card text-card-foreground border border-border rounded shadow-md shadow-border ">
         <h3 className="markup mk-purple text-2xl font-bold z-10 w-fit mb-2">
           Frontend Dev
         </h3>
@@ -16,7 +16,7 @@ function SkillsCard() {
           experience in HTML, CSS, JS, React and NextJS frameworks.
         </p>
       </div>
-      <div className="tag-animation relative p-8 max-w-xs left-24 bg-card text-card-foreground border border-border rounded shadow-md shadow-border">
+      <div className="horizontal-animation relative p-8 max-w-xs left-24 bg-card text-card-foreground border border-border rounded shadow-md shadow-border">
         <h3 className="markup mk-orange text-2xl font-bold z-10 w-fit mb-2">
           Backend Dev
         </h3>
@@ -25,7 +25,7 @@ function SkillsCard() {
           experience in Java, Node.js, and related frameworks.
         </p>
       </div>
-    </HorizontalAnimations>
+    </HorizontalEntryAnimations>
   );
 }
 

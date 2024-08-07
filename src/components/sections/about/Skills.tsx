@@ -4,12 +4,12 @@ import skillsList from "./SkillsList";
 import { cn } from "@/lib/utils";
 
 import Signs from "@/../public/assets/about/signs.svg";
-import { HorizontalAnimations } from "./AboutAnimations";
+import { HorizontalEntryAnimations } from "@/components/animations/HorizontalEntryAnimations";
 
 function Skills() {
   return (
-    <HorizontalAnimations direction="left">
-      <div className="tag-animation relative">
+    <HorizontalEntryAnimations direction="left">
+      <div className="horizontal-animation relative">
         <h3 className="text-4xl lg:text-6xl font-bold lg:leading-10">
           Meet the Developer
         </h3>
@@ -27,7 +27,7 @@ function Skills() {
             <div
               key={skills.id}
               className={cn(
-                "tag-animation bg-card text-card-foreground border-border border px-4 py-4 rounded shadow-md shadow-border",
+                "horizontal-animation bg-card text-card-foreground border-border border px-4 py-4 rounded shadow-md shadow-border",
                 skills.classCompl
               )}
             >
@@ -44,7 +44,7 @@ function Skills() {
           );
         })}
       </div>
-    </HorizontalAnimations>
+    </HorizontalEntryAnimations>
   );
 }
 

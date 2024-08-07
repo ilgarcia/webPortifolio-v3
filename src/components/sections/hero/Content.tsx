@@ -1,13 +1,13 @@
 import Link from "next/link";
 
 import { DoubleArrowDownIcon } from "@radix-ui/react-icons";
-import { MouseIcon } from "@/components/layouts/SvgIcons";
 
-import HeroAnimations from "./HeroAnimations";
+import { MouseIcon } from "@/components/layouts/SvgIcons";
+import { HeroContentAnimations } from "@/components/animations/HeroAnimations";
 
 function Content() {
   return (
-    <HeroAnimations className="absolute top-[20%] md:top-[50%] left-0 md:-translate-y-1/2 w-full px-[5%] z-20">
+    <HeroContentAnimations className="absolute top-[20%] md:top-[50%] left-0 md:-translate-y-1/2 w-full px-[5%] z-20">
       <div className="relative flex flex-col gap-4 mx-auto  max-w-7xl w-full h-full text-base md:text-lg">
         <div className="tag-animation flex items-center gap-0.5 text-xl lg:text-2xl text-secondary font-semibold after:contents-[''] after:absolute after:left-8 after:top-8 after:w-px after:h-[60vh] after:mt-2 after:bg-gradient-to-b after:from-slate-600 after:to-slate-600/5 ">
           <span className="text-3xl lg:text-4xl text-slate-600 font-extralight">
@@ -42,7 +42,7 @@ function Content() {
           </Link>
         </div>
       </div>
-    </HeroAnimations>
+    </HeroContentAnimations>
   );
 }
 
