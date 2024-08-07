@@ -1,3 +1,5 @@
+type Section = "#home" | "#about" | "#portfolio" | "#experience" | "#contact"
+
 interface Project {
   id: number
   title: string

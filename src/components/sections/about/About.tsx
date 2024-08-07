@@ -1,10 +1,10 @@
 import Skills from "./Skills";
 import SkillsCard from "./SkillsCard";
-import { AboutAnimations } from "./AboutAnimations";
+import { SectionNavAnimations } from "@/components/animations/SectionNavAnimations";
 
 function About() {
   return (
-    <AboutAnimations
+    <SectionNavAnimations
       id="about"
       className="relative flex items-center w-full min-h-screen bg-baseBackground pt-[4.5rem] px-[5%] overflow-hidden"
     >
@@ -15,7 +15,7 @@ function About() {
         <Skills />
         <SkillsCard />
       </div>
-    </AboutAnimations>
+    </SectionNavAnimations>
   );
 }
 

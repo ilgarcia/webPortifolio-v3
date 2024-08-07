@@ -21,13 +21,13 @@ function Skills() {
           />
         </div>
       </div>
-      <div className="grid grid-cols-2 grid-rows-3 gap-2 mt-10 font-fira">
+      <div className="grid grid-cols-2 grid-rows-3 gap-3 mt-10 font-fira">
         {skillsList.map((skills) => {
           return (
             <div
               key={skills.id}
               className={cn(
-                "tag-animation bg-background text-foreground border-gray-800 border px-4 py-4 rounded-xl",
+                "tag-animation bg-card text-card-foreground border-border border px-4 py-4 rounded shadow-md shadow-border",
                 skills.classCompl
               )}
             >

@@ -1,13 +1,13 @@
+import { SectionNavAnimations } from "@/components/animations/SectionNavAnimations";
 import ExperienceAccordion from "./ExperienceAccordion";
 import {
-  ExperienceAnimations,
   HorizontalAnimations,
 } from "./ExperienceAnimations";
 import ExperienceCard from "./ExperienceCard";
 
 function Experience() {
   return (
-    <ExperienceAnimations
+    <SectionNavAnimations
       id="experience"
       className="flex items-center w-full relative min-h-screen bg-baseBackground pt-[4.5rem] px-[5%] overflow-hidden"
     >
@@ -22,7 +22,7 @@ function Experience() {
           <ExperienceAccordion />
         </HorizontalAnimations>
       </div>
-    </ExperienceAnimations>
+    </SectionNavAnimations>
   );
 }
 

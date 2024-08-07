@@ -1,26 +1,12 @@
-"use client";
 
-import { useEffect, useRef } from "react";
+import { SectionNavAnimations } from "@/components/animations/SectionNavAnimations";
 
-import { useSectionStore } from "@/store/section";
-
-import useScrollActive from "@/hooks/useScrollActive";
 import Link from "next/link";
 
 function Contact() {
-  const sectionRef = useRef(null);
-
-  // Set Active Session
-  const contactSectionOnView = useScrollActive(sectionRef);
-  const { setSection } = useSectionStore();
-
-  useEffect(() => {
-    contactSectionOnView && setSection("#contact");
-  }, [contactSectionOnView, setSection]);
 
   return (
-    <section
-      ref={sectionRef}
+    <SectionNavAnimations
       id="contact"
       className="trigger flex flex-col items-center justify-center w-full relative min-h-screen bg-baseBackground pt-[4.5rem] overflow-x-hidden"
     >
@@ -82,7 +68,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </section>
+    </SectionNavAnimations>
   );
 }
 

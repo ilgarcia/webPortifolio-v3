@@ -1,14 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-import { useSectionStore } from "@/store/section";
-
-import useScrollActive from "@/hooks/useScrollActive";
 
 type Props = {
   readonly children: React.ReactNode;
@@ -18,23 +14,6 @@ type Props = {
 
 interface HorizontalProps extends Props {
   direction: "left" | "right";
-}
-
-export function AboutAnimations(props: Props) {
-  const ref = useRef(null);
-
-  const aboutSectionOnView = useScrollActive(ref);
-  const { setSection } = useSectionStore();
-
-  useEffect(() => {
-    aboutSectionOnView ? setSection("#about") : setSection("#home");
-  }, [aboutSectionOnView, setSection]);
-
-  return (
-    <section ref={ref} id={props.id} className={props.className}>
-      {props.children}
-    </section>
-  );
 }
 
 export function HorizontalAnimations(props: HorizontalProps) {

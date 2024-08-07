@@ -1,8 +1,6 @@
 import { create } from "zustand"
 import { persist } from "zustand/middleware"
 
-export type Section = "#home" | "#about" | "#portfolio" | "#experience" | "#contact"
-
 interface SectionState {
   section: Section
   setSection: (section: Section) => void

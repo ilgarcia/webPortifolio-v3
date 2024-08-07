@@ -1,38 +1,11 @@
-// "use client";
 
 import Link from "next/link";
 import { LeftAnimations, RightAnimations } from "./SocialAnimations";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-// import { useGSAP } from "@gsap/react";
 
 import socialLinks from "./SocialLinks";
 
 function Social() {
-  // gsap.registerPlugin(ScrollTrigger);
-
-  // useGSAP(() => {
-  //   gsap.to(".right-socials", {
-  //     x: 50,
-  //     scrollTrigger: {
-  //       trigger: "#contact",
-  //       start: "top bottom",
-  //       end: "center center",
-  //       scrub: true,
-  //     },
-  //   });
-
-  //   gsap.to(".left-socials", {
-  //     y: 200,
-  //     scrollTrigger: {
-  //       trigger: "#contact",
-  //       start: "top bottom",
-  //       end: "center center",
-  //       scrub: true,
-  //     },
-  //   });
-  // }, []);
-
+  
   return (
     <>
       <RightAnimations className="fixed z-30 right-4 bottom-[5%] lg:bottom-[20%]">
