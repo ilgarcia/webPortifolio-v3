@@ -6,8 +6,6 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import React from "react";
-
 export function HorizontalEntryAnimations(props: HorizontalAnimationProps) {
   const ref = useRef(null);
 

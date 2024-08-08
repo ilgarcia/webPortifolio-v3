@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-function VerticalSurgeAnimations(props: AnimationSectionProps) {
+export function VerticalSurgeAnimations(props: AnimationSectionProps) {
   const ref = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
@@ -44,4 +44,3 @@ function VerticalSurgeAnimations(props: AnimationSectionProps) {
   );
 }
 
-export default VerticalSurgeAnimations;

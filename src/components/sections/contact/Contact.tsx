@@ -1,5 +1,5 @@
 import { SectionNavAnimations } from "@/components/animations/SectionNavAnimations";
-import VerticalSurgeAnimations from "@/components/animations/VerticalSurgeAnimations";
+import { VerticalSurgeAnimations } from "@/components/animations/VerticalSurgeAnimations";
 
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ function Contact() {
       id="contact"
       className="trigger flex flex-col items-center justify-center w-full relative min-h-screen bg-baseBackground pt-[4.5rem] overflow-x-hidden"
     >
-      <h2 className="font-fira text-6xl md:text-8xl tracking-tighter text-slate-800/90 font-medium mb-10">
+      <h2 className="font-fira text-6xl md:text-8xl tracking-tighter text-slate-800/90 font-medium mb-6">
         Contact Me.
       </h2>
       <VerticalSurgeAnimations className="overflow-hidden py-10 w-full">
