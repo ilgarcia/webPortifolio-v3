@@ -57,7 +57,7 @@ function Portfolio() {
             Necessitatibus nemo eum impedit earum, doloremque molestiae optio
           </div>
         </VerticalSurgeAnimations>
-        <div className="w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {projects.map((project) => (
             <PortfolioCard key={project.id} item={project} />
           ))}
@@ -77,38 +77,6 @@ function Portfolio() {
           </div>
         </VerticalSurgeAnimations>
       </div>
-
-      {/* <div className="w-full max-w-[1100px] h-full m-auto flex flex-col items-center gap-14">
-        <div className="w-[80%] md:w-full flex absolute left-1/2 -translate-x-1/2 flex-col gap-8 items-center">
-          <h3 className="text-4xl lg:text-6xl font-bold lg:leading-10">
-            Featured Projects
-          </h3>
-          <div className="overflow-hidden ">
-            <div className="qoutes-animation  md:w-full text-center font-medium flex flex-col items-center">
-              <div>Good design is obvious. Great design is transparent.</div>
-              <div>Design is not for philosophy, it&apos;s for life.</div>
-            </div>
-          </div>
-        </div>
-        <div className="w-full pt-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {projects.map((project) => (
-            <PortfolioCard key={project.id} item={project} />
-          ))}
-        </div>
-
-        <div className="font-medium">
-          Explore more projects in{" "}
-          <Link
-            href=""
-            target="_blank"
-            aria-label="Expore more in my github profile"
-            rel="noopener noreferrer"
-            className="text-accentColor"
-          >
-            my github profile
-          </Link>
-        </div>
-      </div> */}
     </SectionNavAnimations>
   );
 }
@@ -117,8 +85,8 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Portfolio Test",
-    description: "This is a test test test test and i know it",
-    techStacks: ["ReactJS", "TypeScript"],
+    description: "This is a test test test test and i know , This is a test test test test and i know it, This is a test test test test and i know it",
+    techStacks: ["ReactJS", "TypeScript", "Teste", "teste", "Teste", "Teste", "Teste"],
     image: ogImage,
     githubURL: "",
     githubApi: "",

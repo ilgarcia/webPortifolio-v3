@@ -10,7 +10,7 @@ function ExperienceCard() {
         aperiam voluptatum mollitia. Dolore nihil, similique fugit vel
         aspernatur natus accusantium quod!
       </div>
-      <div className="border-primary py-5 border-y mt-5">
+      <div className="border-secondary py-5 border-y mt-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
         odio doloremque dolorum cumque eligendi aliquam minima nihil magnam
       </div>
