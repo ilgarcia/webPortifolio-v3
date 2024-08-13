@@ -85,10 +85,19 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Portfolio Test",
-    description: "This is a test test test test and i know , This is a test test test test and i know it, This is a test test test test and i know it",
-    techStacks: ["ReactJS", "TypeScript", "Teste", "teste", "Teste", "Teste", "Teste"],
+    description:
+      "This is a test test test test and i know , This is a test test test test and i know it, This is a test test test test and i know it",
+    techStacks: [
+      "ReactJS",
+      "TypeScript",
+      "Teste",
+      "teste",
+      "Teste",
+      "Teste",
+      "Teste",
+    ],
     image: ogImage,
-    githubURL: "",
+    githubURL: "https://github.com/",
     githubApi: "",
   },
   {
@@ -97,7 +106,7 @@ const projects: Project[] = [
     description: "This is a test test test test and i know it",
     techStacks: ["ReactJS", "TypeScript"],
     image: ogImage,
-    githubURL: "",
+    githubURL: "https://github.com/",
     githubApi: "",
   },
   {
@@ -106,7 +115,7 @@ const projects: Project[] = [
     description: "This is a test test test test and i know it",
     techStacks: ["ReactJS", "TypeScript"],
     image: ogImage,
-    githubURL: "",
+    githubURL: "https://github.com/",
     githubApi: "",
   },
   {
@@ -115,7 +124,7 @@ const projects: Project[] = [
     description: "This is a test test test test and i know it",
     techStacks: ["ReactJS", "TypeScript"],
     image: ogImage,
-    githubURL: "",
+    githubURL: "https://github.com/",
     githubApi: "",
   },
   {
@@ -124,7 +133,7 @@ const projects: Project[] = [
     description: "This is a test test test test and i know it",
     techStacks: ["ReactJS", "TypeScript"],
     image: ogImage,
-    githubURL: "",
+    githubURL: "https://github.com/",
     githubApi: "",
   },
   {
@@ -133,7 +142,7 @@ const projects: Project[] = [
     description: "This is a test test test test and i know it",
     techStacks: ["ReactJS", "TypeScript"],
     image: ogImage,
-    githubURL: "",
+    githubURL: "https://github.com/",
     githubApi: "",
   },
 ];

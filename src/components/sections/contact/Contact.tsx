@@ -13,9 +13,9 @@ function Contact() {
         Contact Me.
       </h2>
       <VerticalSurgeAnimations className="overflow-hidden py-10 w-full">
-        <div className=" w-full bg-indigo-500/10">
+        <div className="w-full bg-primary-opacity-10">
           <div className="relative flex flex-col items-center mx-auto max-w-7xl gap-8 ">
-            <h3 className="vertical-animation contact-line relative top-0 -translate-y-1/2 text-4xl text-orange-400">
+            <h3 className="vertical-animation contact-line relative top-0 -translate-y-1/2 text-4xl text-secondary">
               Igor Lima Garcia
             </h3>
             <div className=" flex-col items-center text-center max-w-xl">
@@ -60,7 +60,7 @@ function Contact() {
                     height="15"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    className="stroke-foreground  group-hover:stroke-primary "
+                    className="stroke-foreground group-hover:stroke-primary "
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"

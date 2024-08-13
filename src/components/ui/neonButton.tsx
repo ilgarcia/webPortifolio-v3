@@ -9,7 +9,7 @@ type Props = {
   className?: string;
 };
 
-export default function ResumeBtn({ className }: Props) {
+export default function NeonButton({ className }: Props) {
   const topTween = useRef(null);
   const rightTween = useRef(null);
   const bottomTween = useRef(null);

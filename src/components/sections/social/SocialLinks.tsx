@@ -1,4 +1,4 @@
-import { GitHubIcon, LinkedinIcon } from "@/components/layouts/SvgIcons";
+import { GitHubIcon, LinkedinIcon } from "@/components/ui/svgIcons";
 
 const socialLinks = [
   {

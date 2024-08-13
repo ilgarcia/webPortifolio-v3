@@ -1,11 +1,12 @@
 
-import Logo from "../Logo";
-import ResumeBtn from "../ResumeBtn";
-import ThemeSwitch from "./ThemeSwitch";
 import Sidebar from "./Sidebar";
-
-import HeaderAnimations from "./HeaderAnimations";
 import Navbar from "./Navbar";
+
+import Logo from "@/components/ui/logo";
+import NeonButton from "@/components/ui/neonButton";
+import ThemeSwitch from "@/components/ui/themeSwitch";
+
+import HeaderAnimations from "@/components/animations/HeaderAnimations";
 
 function Header() {
   return (
@@ -15,7 +16,7 @@ function Header() {
           <Logo />
           <Navbar />
           <div className=" flex items-center justify-end gap-2 lg:gap-10">
-            <ResumeBtn className={"hidden lg:block"} />
+            <NeonButton className={"hidden lg:block"} />
             <ThemeSwitch />
             <Sidebar />
           </div>
