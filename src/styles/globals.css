@@ -78,4 +78,8 @@
   .contact-line::after {
     @apply content-[""] h-1 w-[60vw] bg-primary/30 absolute translate-x-full -right-10 bottom-1/2 translate-y-1/2;
   }
+
+  .card {
+    @apply bg-gradient-to-br from-card to-card-gradient text-card-foreground border border-border rounded shadow-md shadow-border
+  }
 }

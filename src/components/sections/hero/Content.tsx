@@ -3,7 +3,7 @@ import Link from "next/link";
 import { DoubleArrowDownIcon } from "@radix-ui/react-icons";
 
 import { MouseIcon } from "@/components/ui/svgIcons";
-import { HeroContentAnimations } from "@/components/animations/HeroAnimations";
+import { HeroContentAnimations } from "@/components/animations/sections/HeroAnimations";
 
 function Content() {
   return (

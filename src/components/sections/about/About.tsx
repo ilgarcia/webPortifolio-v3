@@ -1,6 +1,6 @@
 import Skills from "./Skills";
 import SkillsCard from "./SkillsCard";
-import { SectionNavAnimations } from "@/components/animations/SectionNavAnimations";
+import { SectionNavAnimations } from "@/components/animations/layouts/SectionNavAnimations";
 
 function About() {
   return (

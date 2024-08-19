@@ -28,6 +28,22 @@ export const GitHubIcon: React.FC<IconProps> = ({ className, ...props }) => (
   </svg>
 );
 
+export const GitHubLineIcon: React.FC<IconProps> = ({
+  className,
+  ...props
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    className={className}
+    {...props}
+  >
+    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+  </svg>
+);
+
 export const LinkedinIcon: React.FC<IconProps> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -54,75 +70,15 @@ export const CopyrightIcon: React.FC<IconProps> = ({ className, ...props }) => (
   </svg>
 );
 
-export const LoaderAnimationIcon: React.FC<IconProps> = ({
-  className,
-  ...props
-}) => (
+export const EmailIcon: React.FC<IconProps> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="200"
-    height="200"
-    viewBox="0 0 200 200"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
     className={className}
     {...props}
   >
-    <rect
-      // fill="#FF156D"
-      // stroke="#FF156D"
-      strokeWidth="15"
-      width="30"
-      height="30"
-      x="25"
-      y="50"
-    >
-      <animate
-        attributeName="y"
-        calcMode="spline"
-        dur="2"
-        values="50;120;50;"
-        keySplines=".5 0 .5 1;.5 0 .5 1"
-        repeatCount="indefinite"
-        begin="-.4"
-      ></animate>
-    </rect>
-    <rect
-      // fill="#FF156D"
-      // stroke="#FF156D"
-      strokeWidth="15"
-      width="30"
-      height="30"
-      x="85"
-      y="50"
-    >
-      <animate
-        attributeName="y"
-        calcMode="spline"
-        dur="2"
-        values="50;120;50;"
-        keySplines=".5 0 .5 1;.5 0 .5 1"
-        repeatCount="indefinite"
-        begin="-.2"
-      ></animate>
-    </rect>
-    <rect
-      // fill="#FF156D"
-      // stroke="#FF156D"
-      strokeWidth="15"
-      width="30"
-      height="30"
-      x="145"
-      y="50"
-    >
-      <animate
-        attributeName="y"
-        calcMode="spline"
-        dur="2"
-        values="50;120;50;"
-        keySplines=".5 0 .5 1;.5 0 .5 1"
-        repeatCount="indefinite"
-        begin="0"
-      ></animate>
-    </rect>
-    {/* <path d="M16.2877 9.42773C15.413 7.97351 13.8195 7 12 7 9.23999 7 7 9.23999 7 12 7 14.76 9.23999 17 12 17 13.8195 17 15.413 16.0265 16.2877 14.5723L14.5729 13.5442C14.0483 14.4166 13.0927 15 12 15 10.3425 15 9 13.6575 9 12 9 10.3425 10.3425 9 12 9 13.093 9 14.0491 9.58386 14.5735 10.4568L16.2877 9.42773ZM22 12C22 6.47998 17.52 2 12 2 6.47998 2 2 6.47998 2 12 2 17.52 6.47998 22 12 22 17.52 22 22 17.52 22 12ZM4 12C4 7.57996 7.57996 4 12 4 16.42 4 20 7.57996 20 12 20 16.42 16.42 20 12 20 7.57996 20 4 16.42 4 12Z" /> */}
+    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
   </svg>
 );

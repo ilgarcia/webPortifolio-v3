@@ -6,7 +6,7 @@ import Logo from "@/components/ui/logo";
 import NeonButton from "@/components/ui/neonButton";
 import ThemeSwitch from "@/components/ui/themeSwitch";
 
-import HeaderAnimations from "@/components/animations/HeaderAnimations";
+import HeaderAnimations from "@/components/animations/layouts/HeaderAnimations";
 
 function Header() {
   return (

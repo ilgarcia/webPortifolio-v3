@@ -1,44 +1,16 @@
-// "use client";
 
 import Link from "next/link";
 
-import { SectionNavAnimations } from "@/components/animations/SectionNavAnimations";
+import { SectionNavAnimations } from "@/components/animations/layouts/SectionNavAnimations";
 import { VerticalSurgeAnimations } from "@/components/animations/VerticalSurgeAnimations";
 
 import PortfolioCard from "./PortfolioCard";
 
-import ogImage from "@/../public/og-image.png";
+import projectsList from "@/lib/projectsList";
+
+// import ogImage from "@/../public/og-image.png";
 
 function Portfolio() {
-  // gsap.registerPlugin(ScrollTrigger);
-
-  // const sectionRef = useRef(null);
-
-  // const elementRef = useRef<HTMLDivElement>(null);
-  // // const isOnScreen = useOnScreen(elementRef)
-
-  // useEffect(() => {
-  //   const q = gsap.utils.selector(sectionRef);
-
-  //   gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: sectionRef.current,
-  //       scrub: true,
-  //       onEnter: () => {
-  //         gsap.fromTo(
-  //           q(".qoutes-animation"),
-  //           {
-  //             y: "-200%",
-  //           },
-  //           {
-  //             y: 0,
-  //           }
-  //         );
-  //       },
-  //     },
-  //   });
-  // }, []);
-
   return (
     <SectionNavAnimations
       id="portfolio"
@@ -57,8 +29,8 @@ function Portfolio() {
             Necessitatibus nemo eum impedit earum, doloremque molestiae optio
           </div>
         </VerticalSurgeAnimations>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-          {projects.map((project) => (
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 max-w-6xl mx-auto ">
+          {projectsList.map((project) => (
             <PortfolioCard key={project.id} item={project} />
           ))}
         </div>
@@ -66,7 +38,7 @@ function Portfolio() {
           <div className="vertical-animation font-medium">
             Explore more projects in{" "}
             <Link
-              href=""
+              href="https://github.com/ilgarcia"
               target="_blank"
               aria-label="Expore more in my github profile"
               rel="noopener noreferrer"
@@ -80,71 +52,5 @@ function Portfolio() {
     </SectionNavAnimations>
   );
 }
-
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "Portfolio Test",
-    description:
-      "This is a test test test test and i know , This is a test test test test and i know it, This is a test test test test and i know it",
-    techStacks: [
-      "ReactJS",
-      "TypeScript",
-      "Teste",
-      "teste",
-      "Teste",
-      "Teste",
-      "Teste",
-    ],
-    image: ogImage,
-    githubURL: "https://github.com/",
-    githubApi: "",
-  },
-  {
-    id: 2,
-    title: "Portfolio Test",
-    description: "This is a test test test test and i know it",
-    techStacks: ["ReactJS", "TypeScript"],
-    image: ogImage,
-    githubURL: "https://github.com/",
-    githubApi: "",
-  },
-  {
-    id: 3,
-    title: "Portfolio Test",
-    description: "This is a test test test test and i know it",
-    techStacks: ["ReactJS", "TypeScript"],
-    image: ogImage,
-    githubURL: "https://github.com/",
-    githubApi: "",
-  },
-  {
-    id: 4,
-    title: "Portfolio Test",
-    description: "This is a test test test test and i know it",
-    techStacks: ["ReactJS", "TypeScript"],
-    image: ogImage,
-    githubURL: "https://github.com/",
-    githubApi: "",
-  },
-  {
-    id: 5,
-    title: "Portfolio Test",
-    description: "This is a test test test test and i know it",
-    techStacks: ["ReactJS", "TypeScript"],
-    image: ogImage,
-    githubURL: "https://github.com/",
-    githubApi: "",
-  },
-  {
-    id: 6,
-    title: "Portfolio Test",
-    description: "This is a test test test test and i know it",
-    techStacks: ["ReactJS", "TypeScript"],
-    image: ogImage,
-    githubURL: "https://github.com/",
-    githubApi: "",
-  },
-];
 
 export default Portfolio;

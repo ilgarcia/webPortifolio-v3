@@ -15,9 +15,13 @@ function ExperienceAccordion() {
     >
       <AccordionItem value="item-1" className="horizontal-animation">
         <AccordionTrigger>
-          <div className="w-full flex justify-between">
-            <div>Managing Partner @ Conta-Mais</div>
-            <div className="px-4">Jul 18 - Dec-21</div>
+          <div className="w-full flex justify-between gap-x-2">
+            <div>Managing Partner @Conta-Mais</div>
+            <div className="flex flex-col justify-center sm:flex-row ">
+              <span>Jul/18</span>
+              <span className="hidden sm:block"> - </span>
+              <span>Dec/21</span>
+            </div>
           </div>
         </AccordionTrigger>
         <AccordionContent className="w-full rounded-md bg-gray-900 border border-gray-800">
@@ -45,9 +49,13 @@ function ExperienceAccordion() {
       </AccordionItem>
       <AccordionItem value="item-2" className="horizontal-animation">
         <AccordionTrigger>
-          <div className="w-full flex justify-between">
-            <div>Process analyst @ Itaú Unibanco</div>
-            <div className="px-4">Mar 16 - Jul 18</div>
+          <div className="w-full flex justify-between gap-x-2">
+            <div>Process analyst @Itaú Unibanco</div>
+            <div className="flex flex-col justify-center sm:flex-row ">
+              <span>Mar/16</span>
+              <span className="hidden sm:block"> - </span>
+              <span>Jul/18</span>
+            </div>
           </div>
         </AccordionTrigger>
         <AccordionContent className="w-full rounded-md bg-gray-900 border border-gray-800">
@@ -77,9 +85,13 @@ function ExperienceAccordion() {
       </AccordionItem>
       <AccordionItem value="item-3" className="horizontal-animation">
         <AccordionTrigger>
-          <div className="w-full flex justify-between">
-            <div>Intern @ Itaú Unibanco</div>
-            <div className="px-4">May 14 - Mar 16</div>
+          <div className="w-full flex justify-between gap-x-2">
+            <div>Intern @Itaú Unibanco</div>
+            <div className="flex flex-col justify-center sm:flex-row ">
+              <span>May/14</span>
+              <span className="hidden sm:block"> - </span>
+              <span>Mar/16</span>
+            </div>
           </div>
         </AccordionTrigger>
         <AccordionContent className="w-full rounded-md bg-gray-900 border border-gray-800">

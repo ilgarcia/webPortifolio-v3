@@ -9,6 +9,7 @@ import Footer from "@/components/layouts/footer/Footer";
 
 import "@/styles/globals.css";
 import "@/styles/variables.css";
+import Mouse from "@/components/layouts/mouse/Mouse";
 
 export const source = Source_Sans_3({
   subsets: ["latin"],
@@ -160,6 +161,7 @@ export default function RootLayout({
         >
           <div className="relative">
             <Header />
+            <Mouse />
             {children}
             <Footer />
           </div>

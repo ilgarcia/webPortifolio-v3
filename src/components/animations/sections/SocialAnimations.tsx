@@ -15,8 +15,22 @@ export function RightAnimations(prop: Props) {
 
   gsap.registerPlugin(ScrollTrigger);
 
+  useGSAP(
+    () => {
+      var tl = gsap.timeline();
+      tl.fromTo(
+        ref.current,
+        {
+          x: 50,
+        },
+        { x: 0, delay: 1.5, duration: 0.5 }
+      );
+    },
+    { scope: ref }
+  );
+
   useGSAP(() => {
-    gsap.to(ref.current, {
+    gsap.to(".social-right-animation", {
       x: 50,
       scrollTrigger: {
         trigger: "#contact",
@@ -29,7 +43,7 @@ export function RightAnimations(prop: Props) {
 
   return (
     <div ref={ref} className={prop.className}>
-      {prop.children}
+      <div className="social-right-animation">{prop.children}</div>
     </div>
   );
 }
@@ -39,9 +53,23 @@ export function LeftAnimations(prop: Props) {
 
   gsap.registerPlugin(ScrollTrigger);
 
+  useGSAP(
+    () => {
+      var tl = gsap.timeline();
+      tl.fromTo(
+        ref.current,
+        {
+          y: 250,
+        },
+        { y: 0, delay: 1.5, duration: 0.5 }
+      );
+    },
+    { scope: ref }
+  );
+
   useGSAP(() => {
-    gsap.to(ref.current, {
-      y: 200,
+    gsap.to(".social-left-animation", {
+      y: 250,
       scrollTrigger: {
         trigger: "#contact",
         start: "top bottom",
@@ -53,7 +81,9 @@ export function LeftAnimations(prop: Props) {
 
   return (
     <div ref={ref} className={prop.className}>
-      {prop.children}
+      <div className="social-left-animation flex flex-col gap-2 items-center">
+        {prop.children}
+      </div>
     </div>
   );
 }

@@ -60,6 +60,7 @@ const config = {
         },
         card: {
           DEFAULT: "hsl(var(--card))",
+          gradient: "hsl(var(--card-gradient))",
           foreground: "hsl(var(--card-foreground))",
         },
         header: {

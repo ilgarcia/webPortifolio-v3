@@ -1,6 +1,6 @@
 import Content from "./Content";
 import HeroCanvas from "./HeroCanvas";
-import { SectionNavAnimations } from "@/components/animations/SectionNavAnimations";
+import { SectionNavAnimations } from "@/components/animations/layouts/SectionNavAnimations";
 
 function Hero() {
   return (

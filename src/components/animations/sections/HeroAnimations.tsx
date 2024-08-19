@@ -19,7 +19,7 @@ export function HeroContentAnimations(props: AnimationSectionProps) {
         {
           x: 0,
           opacity: 100,
-          delay: 2.0,
+          delay: 1.2,
         }
       );
       tl.fromTo(
