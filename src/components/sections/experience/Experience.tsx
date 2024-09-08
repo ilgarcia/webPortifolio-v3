@@ -10,7 +10,7 @@ function Experience() {
       id="experience"
       className="flex items-center w-full relative min-h-screen bg-baseBackground pt-[4.5rem] px-[5%] overflow-hidden"
     >
-      <h2 className="absolute -left-6 top-20 flex flex-col  font-fira font-medium text-6xl md:text-8xl tracking-tighter text-slate-800/90 -z-10">
+      <h2 className="bg-title absolute -left-6 top-20 flex flex-col -z-10">
         <span>Work</span>
         <span>Experience.</span>
       </h2>

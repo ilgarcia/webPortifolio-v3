@@ -10,7 +10,7 @@ function Contact() {
       id="contact"
       className="flex flex-col items-center justify-center w-full relative min-h-screen bg-baseBackground pt-[4.5rem] overflow-x-hidden"
     >
-      <h2 className="absolute top-24 sm:top-20 font-fira text-5xl sm:text-6xl md:text-8xl tracking-tighter text-slate-800/90 font-medium mb-6">
+      <h2 className="bg-title absolute top-24 sm:top-20  mb-6">
         Contact Me.
       </h2>
       <VerticalSurgeAnimations className="overflow-hidden py-10 w-full">

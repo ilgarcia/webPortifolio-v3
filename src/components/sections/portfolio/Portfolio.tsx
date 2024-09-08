@@ -15,7 +15,7 @@ function Portfolio() {
       id="portfolio"
       className="w-full relative min-h-screen bg-baseBackground pt-[4.5rem] px-[5%]"
     >
-      <h2 className="absolute -rotate-90 bottom-1/2 translate-y-1/2 -translate-x-1/2 left-8 md:left-14  font-fira text-7xl md:text-8xl tracking-tighter text-slate-800/90 font-medium">
+      <h2 className="bg-title absolute -rotate-90 bottom-1/2 translate-y-1/2 -translate-x-1/2 left-8 md:left-14  ">
         Portfolio.
       </h2>
       <div className="flex flex-col items-center mx-auto max-w-7xl w-full gap-14">

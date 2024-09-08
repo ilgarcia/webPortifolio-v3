@@ -24,7 +24,7 @@ function ExperienceAccordion() {
             </div>
           </div>
         </AccordionTrigger>
-        <AccordionContent className="w-full rounded-md bg-gray-900 border border-gray-800">
+        <AccordionContent className="card w-full mb-1.5">
           <ol>
             <li>
               I founded Conta-Mais, a company that connects professionals with
@@ -58,7 +58,7 @@ function ExperienceAccordion() {
             </div>
           </div>
         </AccordionTrigger>
-        <AccordionContent className="w-full rounded-md bg-gray-900 border border-gray-800">
+        <AccordionContent className="card w-full mb-1.5">
           <ol>
             <li>
               Expertise in analyzing and optimizing existing processes for
@@ -94,7 +94,7 @@ function ExperienceAccordion() {
             </div>
           </div>
         </AccordionTrigger>
-        <AccordionContent className="w-full rounded-md bg-gray-900 border border-gray-800">
+        <AccordionContent className="card w-full mb-1.5">
           <ol>
             <li>
               Monitor occurrences related to technological solutions, detecting

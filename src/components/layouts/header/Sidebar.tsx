@@ -23,7 +23,7 @@ export default function Sidebar() {
     <Sheet open={opened} onOpenChange={(open) => setOpened(open)}>
       <SheetTrigger asChild className="block lg:hidden">
         <Button
-          className="dark:text-white px-2 flex justify-center items-center"
+          className="text-foreground px-2 flex justify-center items-center"
           variant="ghost"
           aria-label="Toggle Navbar"
         >
