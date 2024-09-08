@@ -34,7 +34,7 @@ function Skills() {
               <p className="mb-2">{skills.title}</p>
               <div className="text-xs font-light flex flex-wrap gap-x-2 gap-y-1">
                 {skills.stacks.map((skill, idK) => (
-                  <div key={idK} className="gap-x-2">
+                  <div key={idK} className="space-x-2">
                     <span>{skill}</span>
                     {skills.stacks.length - 1 != idK && <span>/</span>}
                   </div>

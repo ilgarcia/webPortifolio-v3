@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 
 import { SectionNavAnimations } from "@/components/animations/layouts/SectionNavAnimations";
@@ -24,9 +23,11 @@ function Portfolio() {
           <h3 className="vertical-animation text-4xl lg:text-6xl font-bold lg:leading-10 text-center">
             Featured Projects
           </h3>
-          <div className="vertical-animation text-center max-w-sm">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Necessitatibus nemo eum impedit earum, doloremque molestiae optio
+          <div className="vertical-animation text-center max-w-lg">
+            As a developer, I embarked on a journey to bring visions to life,
+            every detail is carefully considered to create the best user
+            experience. Explore my work, and if you like what you see, feel free
+            to contact me!
           </div>
         </VerticalSurgeAnimations>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 max-w-6xl mx-auto ">

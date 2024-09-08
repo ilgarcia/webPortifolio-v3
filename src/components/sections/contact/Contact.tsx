@@ -16,21 +16,23 @@ function Contact() {
       <VerticalSurgeAnimations className="overflow-hidden py-10 w-full">
         <div className="w-full bg-primary-opacity-10">
           <div className="relative flex flex-col items-center mx-auto max-w-7xl gap-8 ">
-            <h3 className="vertical-animation contact-line relative top-0 -translate-y-1/2 text-4xl text-secondary">
-              Igor Lima Garcia
-            </h3>
-            <div className="flex-col items-center text-center max-w-xl px-4 md:px-0">
-              <h4 className="vertical-animation font-semibold">
-                Text title text
+            <div className="flex flex-col items-center">
+              <h3 className="vertical-animation contact-line relative top-0 -translate-y-1/2 text-4xl text-secondary">
+                Igor Lima Garcia
+              </h3>
+              <h4 className="vertical-animation font-bold text-primary">
+                Fullstack Developer | DevOps
               </h4>
+            </div>
+            <div className="flex-col items-center text-center max-w-xl px-4 md:px-0">
               <p className="vertical-animation">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                expedita? Reiciendis earum cum placeat quia id necessitatibus
-                ullam molestiae voluptatibus dolore neque. At aperiam, eligendi
-                libero numquam minima repellendus repudiandae.
+                I&apos;m always excited to connect with like-minded
+                professionals and potential collaborators. Whether you have a
+                project in mind, need assistance, or just want to say hello,
+                feel free to reach out!
               </p>
             </div>
-            <div className="vertical-animation">Another text</div>
+            <div className="vertical-animation">Made by Igor Lima Garcia</div>
             <div className="contact-line relative bottom-0 translate-y-1/2">
               <div className="flex items-center gap-4">
                 <Link
